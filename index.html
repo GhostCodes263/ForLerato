@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>For Lerato 🌹</title><link rel="icon" href="assets/favicon.svg"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/parts.css"></head><body>
+<canvas id="petals"></canvas>
+<div id="intro"><div id="bloom">🌹</div><p>For the girl who deserves every rose…</p><p>Take a breath. This is just for you.</p><button class="btn" onclick="enter()">Open your surprise</button></div>
+<section class="hero"><img class="pic" src="assets/images/l1.jpg" alt=""><h1>Lerato</h1><p>Hi beautiful. Somebody made this just to hold you for a minute.</p><p style="font-size:2rem">⬇️</p></section>
+<section><h2>How are you feeling today?</h2><p>No pressure. Just tap.</p><div class="row" id="moods"></div><p class="out" id="mo"></p></section>
+<section><h2>Breathe with me</h2><p>In… and out. You’re safe.</p><div id="bub">Breathe in</div></section>
+<section><h2>Open when…</h2><p>Little letters for every kind of day.</p><div class="row" id="env"></div></section>
+<section><h2>Your Rose Garden</h2><p>Tap the garden. Every rose is a reason you are loved.</p><div id="garden" onclick="plant(event)"></div><p class="out" id="gr"></p></section>
+<section><h2>My Favourite Girl</h2><p>Swipe →</p><div class="gal" id="gal"></div></section>
+<section><h2>Build a Milkshake</h2><p>Pick a flavour, then shake it.</p><div class="row" id="fl"></div><div id="glass">🥤</div><div><button class="btn" onclick="shake()">Shake it!</button></div><p class="out" id="sk"></p></section>
+<section><h2>Dance Floor</h2><p>Play something. Then dance like nobody’s watching.</p><div class="pads" id="pads"></div><div id="dancers"><span>💃</span><span>🕺</span><span>💃</span></div><button class="btn" onclick="party()">Start a dance party 🎉</button></section>
+<section><h2>Time to Laugh</h2><p class="out" id="jk">Tap for a joke.</p><button class="btn" onclick="joke()">Make me laugh 😂</button><br><img class="pic" style="margin-top:24px;width:200px" src="assets/images/l5.jpg" alt=""></section>
+<section><h2>Compliment Jar</h2><div class="note" id="cp">Tap the jar to pull out a note 💌</div><div class="big" style="font-size:5rem;cursor:pointer" onclick="comp()">🫙</div></section>
+<section><h2>You’re Not Alone</h2><p>Whatever you’re carrying, you don’t have to tell me until you’re ready. No questions, no pressure.</p><p>I’ll be right here, loving you the same, whether it’s a good day or a hard one.</p><div class="big">🤍</div></section>
+<section><h2>My Promises</h2><div class="row" id="pr"></div></section>
+<section><h1 style="font-size:3.2rem">I love you, Lerato</h1><p>Today, tomorrow, and on every ordinary day in between.</p><div style="font-size:3.4rem">💐🌹💐</div><button class="btn" onclick="hug()">Send me a hug 🤗</button><p class="out" id="hg"></p><p style="font-family:var(--h);font-style:italic;font-size:1.5rem;color:var(--rose)">Forever yours,<br><span id="from"></span></p></section>
+<button class="btn" id="mute" onclick="togg()" style="position:fixed;top:10px;right:6px;z-index:60;padding:8px 14px;display:none">🔊</button>
+<script src="data/content.js"></script><script src="js/audio.js"></script><script src="js/petals.js"></script><script src="js/interact.js"></script></body></html>
